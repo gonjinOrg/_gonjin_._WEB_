@@ -1,0 +1,49 @@
+﻿ <%@ Master Language="C#" MasterPageFile="~/_master/Nil.Master" AutoEventWireup="true" CodeBehind="Ini.master.cs" Inherits="_gonjin_._WEB_._master.Ini" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="display:flex; flex-direction:row; flex-basis:1">
+<%-- header --%>
+		<div style="align-self:center;">
+			拥护中央，维护法律，消除庸腐，振兴武汉，与国共进！
+
+		</div>
+		<%--<div style="text-align:right;">
+			——武汉共进社
+		</div>--%>
+		<%--<div>
+			<img src="<%=ResolveUrl("_header/palm.jpg") %>" style="width:40px;" />
+
+
+		</div>--%>
+
+
+	</div>
+	<hr />
+
+	<div style="background: blackj; color: white0;">
+		<style scoped>
+			a {
+				background: magenta;
+				color: white;
+				border: green;
+			}
+
+				a:hover {
+					background: blue;
+					color: white;
+				}
+		</style>
+		<a href="<%=ResolveUrl("~") %>">武汉共进社</a>
+		<a href="<%=ResolveUrl("~/society/") %>">联系方式</a>
+		<a href="<%=ResolveUrl("~/about/") %>">关于我们</a>
+	</div>
+
+	<div>
+		<asp:ContentPlaceHolder ID="main" runat="server">
+		</asp:ContentPlaceHolder>
+
+
+	</div>
+</asp:Content>
